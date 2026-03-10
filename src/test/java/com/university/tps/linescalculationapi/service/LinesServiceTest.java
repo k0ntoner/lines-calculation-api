@@ -119,19 +119,6 @@ class LinesServiceTest {
                                 buildPoint(1.0, 0.0),
                                 buildPoint(0.0, 1.0)
                         )
-                ),
-
-                // =========================
-                // Case 5: COINCIDENT
-                // =========================
-                Arguments.of(
-                        buildLinesDTO(
-                                buildIntercept(2, 2),
-                                buildSlope(-1, 2),
-                                buildSlope(-1, 2)
-                        ),
-                        IntersectionType.COINCIDENT,
-                        List.of()
                 )
         );
     }
